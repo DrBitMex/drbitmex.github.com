@@ -1,0 +1,150 @@
+
+html{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color:slategrey;
+
+}
+img{
+max-width: 100%;
+
+}
+ 
+a:hover{
+opacity: 0.8;
+
+}
+.title{
+
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.container{
+    
+    background: #1A2980;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+
+
+}
+.content{
+    max-width: 960px;
+    height: 80vh;
+    width: 100%;
+    
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 23);
+    position: relative;
+    padding: 1.8em;
+   overflow: scroll;
+}
+.actions{
+    position: absolute;
+    top:1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #26D0CE;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16), 0 3px 6px rgba(0, 0, 0, 23);
+    font-weight: 400;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+.fa-solid-star, .fa-star, .fa-star-o{
+    color: #ffc400;
+    size: 50px;
+
+}
+table{
+    width: 100%;
+    border-spacing: 0;
+
+
+}
+table td, table th{
+    padding: 1em;
+    text-align: left;
+    margin: 0;
+
+}
+table tr:nth-child(even){
+
+    background: paleturquoise;
+    
+}
+.title-item{
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: paleturquoise;
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+
+.fa fa-link{
+
+    color: #ffc400;
+}
+
+.main-image{
+
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}  
+.position{
+    background-color: paleturquoise;
+    color: white;
+    padding: 0.5em;
+    margin: 20px;
+    border-radius: 10px;
+    margin-right: 0.5em;
+
+}
+
+@media(max-width:600px)
+{
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    th{
+        display: none;
+    }
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
